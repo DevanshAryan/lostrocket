@@ -16,12 +16,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build ladle
-        run: npm run build
-
-      - name: Serve ladle
-        run: npm run serve &
-
+      - name: Build Storybook
+        run: npm run build-storybook
+        
       - name: Lost Pixel
         id: lp
         uses: lost-pixel/lost-pixel@v3.4.0
